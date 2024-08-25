@@ -10,6 +10,7 @@ A simple message box component for React, implementing a .NET-like MessageBox pa
 - Supports both simple string messages and complex customized modals
 - Customizable appearance with different modal widths and button variants
 - TypeScript support
+- Zero dependencies (except React)
 
 ## Installation
 
@@ -33,17 +34,15 @@ import App from "./App";
 import { MessageBoxContextProvider } from "react-message-box-async";
 
 const container = document.getElementById("root");
-if (container) {
-  const root = createRoot(container);
-  root.render(
-    <MessageBoxContextProvider>
-      <App />
-    </MessageBoxContextProvider>
-  );
-} else {
-  console.error("Failed to find the root element");
-}
+const root = createRoot(container);
+root.render(
+  <MessageBoxContextProvider>
+    <App />
+  </MessageBoxContextProvider>
+);
 ```
+
+You can also just wrap the part of your app that needs the message box.
 
 ## Usage
 
@@ -63,7 +62,7 @@ const SimpleExample = () => {
     console.log(result); // "accept" when OK is clicked
   };
 
-  return <button onClick={handleClick}>Show Simple Message</button>;
+  return <button onClick={handleClick}>Show simple message</button>;
 };
 ```
 
@@ -78,7 +77,7 @@ const AdvancedExample = () => {
 
   const handleClick = async () => {
     const result = await messageBox.show({
-      title: "Confirm Action",
+      title: "Confirm action",
       msg: (
         <>
           <p>Are you sure you want to proceed?</p>
@@ -97,7 +96,7 @@ const AdvancedExample = () => {
     }
   };
 
-  return <button onClick={handleClick}>Show Advanced Message Box</button>;
+  return <button onClick={handleClick}>Show advanced message</button>;
 };
 ```
 
@@ -105,8 +104,8 @@ const AdvancedExample = () => {
 
 The code for this package is simple and adaptable. For advanced use cases:
 
-- Copy relevant parts of the code to your project instead of using the npm package
-- Customize the modal appearance, integrate with your application's theming system or use your own modal component
+- Copy relevant parts of the code to your project instead of using the npm package. You likely need at least the contents of the `src/messageBox.tsx` file. Components `Modal.tsx` and `Button.tsx` can be copied as well, but there is nothing special about them.
+- Customize the modal appearance, integrate with your application's theming system or use your own modal component, etc.
 
 ## API
 
