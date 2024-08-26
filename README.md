@@ -108,7 +108,7 @@ const AdvancedExample = () => {
 
 The code for this package is simple and adaptable. For advanced use cases:
 
-- Copy relevant parts of the code to your project instead of using the npm package. You likely need at least the contents of the `src/messageBox.tsx` file. Components `Modal.tsx` and `Button.tsx` can be copied as well, but there is nothing special about them.
+- Copy relevant parts of the code to your project instead of using the npm package. You need at least the contents of the `src/MessageBox.tsx` file, as it contains all the logic for the message box component. Components `Modal.tsx` and `Button.tsx` can be copied as well, but there is nothing special about them.
 - Customize the modal appearance, integrate with your application's theming system or use your own modal component, etc.
 
 ## API
@@ -136,6 +136,10 @@ Shows a message box and returns a Promise that resolves to either `"accept"` or 
 - `modalDataTest`: string (optional) - For testing purposes
 
 You can also pass a string directly to `show()` for a simple message box with default styling.
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or a pull request.
 
 ## Development
 
@@ -186,15 +190,15 @@ npm pack
    - Remove aliases for `react` and `react-dom`
    - Remove `--watch-dir ../` from the start script
 
-Remove the `node_modules` folder and the `package-lock.json` file from the example app.
+3. Remove the `node_modules` folder and the `package-lock.json` file from the example app.
 
-3. Move the tarball to the example app:
+4. Move the tarball to the example app:
 
 ```bash
 mv react-message-box-async-x.x.x.tgz example
 ```
 
-4. Install the local package in the example app:
+5. Install the local package in the example app:
 
 ```bash
 cd example
