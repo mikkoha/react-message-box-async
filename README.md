@@ -1,6 +1,6 @@
 # react-message-box-async
 
-A simple message box component for React, implementing a .NET-like MessageBox pattern with async/await support.
+A simple message box component for React, implementing a .NET-like MessageBox pattern with async/await.
 
 ## Features
 

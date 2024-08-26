@@ -1,7 +1,7 @@
 {
   "name": "react-message-box-async",
   "version": "1.0.0",
-  "description": "A simple message box component for React. Inspired by the API of the .NET (WPF and Forms) MessageBox.",
+  "description": "A simple message box component for React, implementing a .NET-like MessageBox pattern with async/await.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/src/index.d.ts",
