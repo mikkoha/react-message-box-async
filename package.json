@@ -8,6 +8,20 @@
   "files": [
     "dist"
   ],
+  "repository": "github:mikkoha/react-message-box-async",
+  "keywords": [
+    "react",
+    "message box",
+    "modal",
+    "dialog",
+    "alert"
+  ],
+  "author": "Mikko Haapanen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikkoha/react-message-box-async/issues"
+  },
+  "homepage": "https://github.com/mikkoha/react-message-box-async#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -17,21 +31,6 @@
     "start": "concurrently \"npm:start:lib\" \"npm:start:example\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/mikkoha/react-message-box-async.git"
-  },
-  "keywords": [
-    "react",
-    "message",
-    "box"
-  ],
-  "author": "Mikko Haapanen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mikkoha/react-message-box-async/issues"
-  },
-  "homepage": "https://github.com/mikkoha/react-message-box-async#readme",
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-react": "^7.24.7",
