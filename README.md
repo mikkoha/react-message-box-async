@@ -138,6 +138,7 @@ You can also pass a string directly to `show()` for a simple message box with de
 Pre-requisites:
 
 - Node.js 18 or later
+- npm 10 or later
 
 To set up the project for development:
 
