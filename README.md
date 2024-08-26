@@ -12,6 +12,10 @@ A simple message box component for React, implementing a .NET-like MessageBox pa
 - TypeScript support
 - Zero dependencies (except React)
 
+## Demo
+
+[Live demo](https://mikkoha.github.io/react-message-box-async/)
+
 ## Installation
 
 ```bash

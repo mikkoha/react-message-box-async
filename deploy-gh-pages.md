@@ -22,10 +22,11 @@ git checkout gh-pages
 cp -R example/dist/* .
 ```
 
-4. Add changed page files:
+4. Add changed page files, remove old files:
 
 ```bash
 git add index.html index.xxx.js index.xxx.js.map
+git rm index.yyy.js index.yyy.js.map
 ```
 
 5. Commit and push:
