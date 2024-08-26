@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMessageBox } from "react-message-box-async";
+import GitHubCorner from "./GitHubCorner";
 
 const App: React.FC = () => {
   const messageBox = useMessageBox();
@@ -63,7 +64,9 @@ const App: React.FC = () => {
 
   return (
     <div style={{ padding: "1rem" }}>
-      <h1>Message box example</h1>
+      <GitHubCorner url="https://github.com/mikkoha/react-message-box-async" />
+
+      <h1>React message box example</h1>
       <div
         style={{
           display: "flex",
