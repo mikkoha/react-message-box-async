@@ -210,7 +210,3 @@ npm install react-message-box-async-x.x.x.tgz
 ```bash
 npm start
 ```
-
-## License
-
-MIT
