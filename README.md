@@ -2,13 +2,16 @@
 
 A simple message box component for React, implementing a .NET-like MessageBox pattern with async/await.
 
+This component can be used to replace the native alert (`window.alert`) and confirm (`window.confirm`) dialogs with a more flexible solution, or to show other popup messages and notifications. The message box can simplify dynamic or conditional multi-step dialog sequences.
+
 ## Features
 
 - Implements a .NET-like message box pattern using async/await in React
+- The modal window can be closed by clicking outside the modal (configurable)
 - Separates the modal rendering logic from where it's used in your code
 - No need to manage modal state (open/closed) where the message box is called
 - Supports both simple string messages and complex customized modals
-- Customizable appearance with different modal widths and button variants
+- Customizable appearance with different modal widths and button variants (text and color)
 - TypeScript support
 - Zero dependencies (except React)
 
