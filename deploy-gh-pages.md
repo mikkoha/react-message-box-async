@@ -2,6 +2,8 @@
 
 The example app is in /example folder. The app is built and the build files are copied to the root of the repository and pushed to the `gh-pages` branch, which is used for GitHub Pages.
 
+0. Make sure the packages are installed (`npm i`, both for the root and the example folder) and the lib is built (`npm run build` in the root folder) before starting the deployment process.
+
 1. Build the app:
 
 ```bash
@@ -25,6 +27,8 @@ cp -R example/dist/* .
 ```
 
 4. Add changed page files, remove old files:
+
+Note: Remove old js and css files. Add new index.html, and the new js and css files that the index.html references.
 
 ```bash
 git add index.html index.xxx.js index.xxx.js.map
