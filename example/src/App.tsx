@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMessageBox } from "react-message-box-async";
 import GitHubCorner from "./GitHubCorner";
+import ContentSection from "./ContentSection";
 
 const App: React.FC = () => {
   const messageBox = useMessageBox();
@@ -53,7 +54,8 @@ const App: React.FC = () => {
   }
 
   const buttonStyle: React.CSSProperties = {
-    padding: "0.5rem 0.75rem",
+    padding: "0.5rem 1rem",
+    fontSize: "1.1rem",
     fontWeight: 600,
     cursor: "pointer",
     backgroundColor: "#2563eb",
@@ -63,10 +65,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1.5rem", maxWidth: "1200px", margin: "0 auto" }}>
       <GitHubCorner url="https://github.com/mikkoha/react-message-box-async" />
 
-      <h1>React message box example</h1>
+      <h1>react-message-box-async example</h1>
+      <p>Click the buttons.</p>
       <div
         style={{
           display: "flex",
@@ -74,7 +77,10 @@ const App: React.FC = () => {
           gap: "0.5rem",
         }}
       >
-        <button style={buttonStyle} onClick={handleClickDefault}>
+        <button
+          style={{ ...buttonStyle, backgroundColor: "#656a74" }}
+          onClick={handleClickDefault}
+        >
           Show default message box
         </button>
         <button style={buttonStyle} onClick={handleClickCustom}>
@@ -83,6 +89,8 @@ const App: React.FC = () => {
       </div>
       <p>Accepted: {acceptedCount}</p>
       <p>Rejected: {rejectedCount}</p>
+
+      <ContentSection />
     </div>
   );
 };

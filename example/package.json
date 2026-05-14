@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html --watch-dir ../",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./"
   },
   "dependencies": {
+    "highlight.js": "^11.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-message-box-async": "file:../"

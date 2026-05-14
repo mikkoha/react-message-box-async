@@ -1,5 +1,7 @@
 # Deploying example app to GitHub Pages
 
+The example app is in /example folder. The app is built and the build files are copied to the root of the repository and pushed to the `gh-pages` branch, which is used for GitHub Pages.
+
 1. Build the app:
 
 ```bash
